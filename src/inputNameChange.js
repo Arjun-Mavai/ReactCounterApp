@@ -4,7 +4,7 @@ export default function MyComponent() {
   const [name, setName] = useState("");
 
   function handleChange(e) {
-    setName(e.target.value);
+    setName(e.target.value); // when we type(event) in input field value goes to  e.target.value : this value is then given to setName
   }
 
   return (
