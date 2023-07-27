@@ -1,3 +1,57 @@
+function sumDigits(number) {
+  let sum = 0;
+  let num = Math.abs(number); // To handle negative numbers
+
+  while (num > 0) {
+    sum += num % 10; // Add the last digit to the sum
+    num = Math.floor(num / 10); // Remove the last digit from the number
+  }
+
+  return sum;
+}
+
+
+
+Example and Analogy:Let's take the number 123 as an example to understand how the function works:Initialize sum = 0.num = 123.In the first iteration of the loop,
+
+ sum += 123 % 10, which is sum += 3. Now sum = 3 and num = 12
+
+.In the second iteration, sum += 12 % 10, which is sum += 2. Now sum = 5 and num = 1.In the last iteration, sum += 1 % 10, which is sum += 1. Now sum = 6 and num = 0.Since num is now 0, the loop stops, and the function returns sum, which is 6.In this way, the function sums all the digits of the number 123 and returns the result, which is 6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
