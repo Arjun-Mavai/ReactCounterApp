@@ -18,6 +18,15 @@ Example and Analogy:Let's take the number 123 as an example to understand how th
 
 .In the second iteration, sum += 12 % 10, which is sum += 2. Now sum = 5 and num = 1.In the last iteration, sum += 1 % 10, which is sum += 1. Now sum = 6 and num = 0.Since num is now 0, the loop stops, and the function returns sum, which is 6.In this way, the function sums all the digits of the number 123 and returns the result, which is 6.
 
+function sumOfDigits(num) {
+let sum = 0;
+num = Math.abs(num); 
+while(num!==0){
+sum += num%10;
+num = Math.floor(num/10);
+}
+return sum;
+}
 
 
 
